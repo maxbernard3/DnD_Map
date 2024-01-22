@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DnD Map</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<header>
+  <button>
+    <a href="index.html">GlobalMap</a>
+  </button>
+  <button id="btn1">NAME_1</button>
+  <button id="btn2">NAME_2</button>
+  <button id="btn3">NAME_3</button>
+  <button id="btn4">NAME_4</button>
+
+  <button id="btn5" class="enemy">ENEMY_1</button>
+  <button id="btn6" class="enemy">ENEMY_2</button>
+  <button id="btn7" class="enemy">ENEMY_3</button>
+  <button id="btn8" class="enemy">ENEMY_4</button>
+</header>
+
+<div class="centre" id="map" class="selectDisable">
+  <img src="./maps/battleMap_ship.webp" class="map">
+  <div class="pawnDiv" id="pawn1" style="border-color: red;">
+      <img src="pawn/pawn.png" class="pawn">
+  </div>
+  <div class="pawnDiv" id="pawn2" style="border-color: greenyellow;">
+    <img src="pawn/pawn.png" class="pawn">
+  </div>
+  <div class="pawnDiv" id="pawn3"  style="border-color: rgb(255, 46, 241);">
+      <img src="pawn/pawn.png" class="pawn">
+  </div>
+  <div class="pawnDiv" id="pawn4" style="border-color: rgb(0, 255, 247);">
+    <img src="pawn/pawn.png" class="pawn">
+  </div>
+
+  <div class="enemyDiv" id="pawn5" style="border-color: rgb(128, 0, 115);">
+    <img src="pawn/enemy.png" class="pawn">
+  </div>
+  <div class="enemyDiv" id="pawn6"  style="border-color: rgb(0, 82, 95);">
+    <img src="pawn/enemy.png" class="pawn">
+  </div>
+  <div class="enemyDiv" id="pawn7" style="border-color: rgb(152, 0, 0);">
+      <img src="pawn/enemy.png" class="pawn">
+  </div>
+  <div class="enemyDiv" id="pawn8"  style="border-color: rgb(14, 117, 0);">
+    <img src="pawn/enemy.png" class="pawn">
+  </div>
+</div>
+
+</body>
+
+<script src="scriptTactical.js"></script>
+</html> 
