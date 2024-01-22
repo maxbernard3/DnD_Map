@@ -94,6 +94,21 @@ body{
     height: 100%;
 }
 
+.pawnDivGlobal{
+    height: 3vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50%;
+}
+
+.mapGlobal{
+    height: 2160px;
+    width: auto;
+}
+
 .selectDisable {
     -webkit-user-select: none;
     -khtml-user-select: none;
