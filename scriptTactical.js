@@ -10,6 +10,7 @@ pawn9 = document.getElementById("pawn9");
 pawn10 = document.getElementById("pawn10");
 pawn11 = document.getElementById("pawn11");
 pawn12 = document.getElementById("pawn12");
+pawn13 = document.getElementById("pawn13");
 
 btn1 = document.getElementById("btn1");
 btn2 = document.getElementById("btn2");
@@ -23,11 +24,12 @@ btn9 = document.getElementById("btn9");
 btn10 = document.getElementById("btn10");
 btn11 = document.getElementById("btn11");
 btn12 = document.getElementById("btn12");
+btn13 = document.getElementById("btn13");
 
 map = document.getElementById("map");
 
-const pawnArr = [pawn1, pawn2, pawn3, pawn4, pawn5, pawn6, pawn7, pawn8, pawn9, pawn10, pawn11, pawn12];
-const btnArr = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12];
+const pawnArr = [pawn1, pawn2, pawn3, pawn4, pawn5, pawn6, pawn7, pawn8, pawn9, pawn10, pawn11, pawn12, pawn13];
+const btnArr = [btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12, btn13];
 
 pawn = pawnArr[0];
 
@@ -68,7 +70,7 @@ function movSetPos(i){
 }
 
 window.addEventListener("load", function() {
-    for(i = 0; i < 12; i++){
+    for(i = 0; i < 13; i++){
         movSetPos(i);
 
     }
@@ -87,5 +89,6 @@ btn9.addEventListener("click", (event)=>{movActive(8)});
 btn10.addEventListener("click", (event)=>{movActive(9)});
 btn11.addEventListener("click", (event)=>{movActive(10)});
 btn12.addEventListener("click", (event)=>{movActive(11)});
+btn13.addEventListener("click", (event)=>{movActive(12)});
 
 map.addEventListener("click", movPawn);
